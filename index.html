@@ -1,56 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center><h1 class="table">Creating  A  Table</h1></center>
+   <div class="flex-container"> <h1>User Management</h1>
+   <div class="div2">Export to Excel
+   </div>
+<br>
+<br>
+   <div class="div3">Add New User</div>
+   </div>
+</div>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management Table</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body style="background-color: darkgrey";>
-    <center><h1 style="font-family:Times New Roman;">Favorite Destination Landing Place
-    </center></h1>
+<body>
+  <div class="table-container">
+    <div class="table-header">
+      <h2>User <span>Management</span></h2>
+      <div class="btn-group">
+        <button class="btn export"><i class="fas fa-file-export"></i> Export to Excel</button>
+        <button class="btn add"><i class="fas fa-user-plus"></i> Add New User</button>
+      </div>
+    </div>
 
-    <h1><center>Swat Valley</center></h1>
-    <center><img src="https://thumbs.dreamstime.com/b/scenic-view-snow-mountains-glacier-usho-valley-kalam-swat-pakistan-scenic-view-snow-mountains-glacier-usho-valley-218022167.jpg" height="550px" width="650px"></center>
-    <h1>
-        Some salient feature of Swat Valley
-    </h1>
-    <p>Swat District (Urdu: ضلع سوات), also known as the Swat Valley, is a district in the Malakand Division of Khyber Pakhtunkhwa, Pakistan. Known for its stunning natural beauty, the district is a popular tourist destination. With a population of 2,687,384 per the 2023 national census, Swat is the 15th-largest district of Khyber Pakhtunkhwa.
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Date Created</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><img class="avatar" src="https://randomuser.me/api/portraits/men/1.jpg" alt=""> Michael Holz</td>
+          <td>04/10/2013</td>
+          <td>Admin</td>
+          <td><span class="status active">● Active</span></td>
+          <td>
+            <i class="fas fa-cog action-icon"></i>
+            <i class="fas fa-times action-icon delete"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="avatar" src="https://randomuser.me/api/portraits/women/2.jpg" alt=""> Paula Wilson</td>
+          <td>05/08/2014</td>
+          <td>Publisher</td>
+          <td><span class="status active">● Active</span></td>
+          <td>
+            <i class="fas fa-cog action-icon"></i>
+            <i class="fas fa-times action-icon delete"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="avatar" src="https://randomuser.me/api/portraits/men/3.jpg" alt=""> Antonio Moreno</td>
+          <td>11/05/2015</td>
+          <td>Publisher</td>
+          <td><span class="status suspended">● Suspended</span></td>
+          <td>
+            <i class="fas fa-cog action-icon"></i>
+            <i class="fas fa-times action-icon delete"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img class="avatar" src="https://randomuser.me/api/portraits/women/4.jpg" alt=""> Mary Saveley</td>
+          <td>06/09/2016</td>
+          <td>Reviewer</td>
+          <td><span class="status active">● Active</span></td>
+          <td>
+            <i class="fas fa-cog action-icon"></i>
+            <i class="fas fa-times action-icon delete"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img class="avatar" src="https://randomuser.me/api/portraits/men/5.jpg" alt=""> Martin Sommer</td>
+          <td>12/08/2017</td>
+          <td>Moderator</td>
+          <td><span class="status inactive">● Inactive</span></td>
+          <td>
+            <i class="fas fa-cog action-icon"></i>
+            <i class="fas fa-times action-icon delete"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-Swat District is centred on the Valley of Swat, usually referred to simply as Swat, which is a natural geographic region surrounding the Swat River. The valley was a major centre of early Buddhism of the ancient civilisation of Gandhara, mainly Gandharan Buddhism, with pockets of Buddhism persisting in the valley until the 16th century conquest of Swat by the Yousafzais, after which the area became largely Muslim, along with the Pashtunization of Swat and its neighbouring regions.In the early 19th century, Swat emerged as an independent state under Saidu Baba. State of Swat became a Princely state under British suzerainty as part of the British Raj in 1918.
-
-In 1947, following the Partition of British India and subsequent independence of Pakistan, Swat acceded to the Dominion of Pakistan continuing as a self-governing princely state until it was officially annexed and merged into West Pakistan and later became a part of North-West Frontier Province (now Khyber Pakhtunkhwa) in 1969. The region was seized by the Tehrik-i-Taliban in late-2007 until Pakistani control was re-established in mid-2009.
-
-<p>The average elevation of Swat is 980 m (3,220 ft), resulting in a considerably cooler and wetter climate compared to the rest of Pakistan. With lush forests, verdant alpine meadows, and snow-capped mountains, Swat is one of the country's most popular tourist destinations.</p>
-<p>code: Area code 0946</p>
-<p>Colleges and Universities: Saidu Medical College, Hira School and College</p>
-<p>rea code: Area code 0946</p>
-<p>Capital: Saidu Sharif</p>
-<p>Division: Malakand</p>
-<p>Languages (2017): First Languages: Pashto (90.78%), Kohistani languages (Torwali and Kalami) (7.35%) and others; Lingua Franca: Urdu</p>
-<p>Largest city: Mingora</p>
-<p>Number of Tehsils: 7</p>
-<h1>
-    Location
-</h1>
-<p>Swat is located in the Malakand Division of the Khyber Pakhtunkhwa province in Pakistan. Specifically, it's a river valley and an administrative district centered around the Swat River, which originates in the Hindu Kush mountain range. </p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209576.33971877236!2d72.35494!3d34.840386499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc3dbd62484e13%3A0xf24b8f7632aff5f3!2sSwat!5e0!3m2!1sen!2s!4v1752917599894!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<h1>Places to visit in Swat Valley</h1>
-<ul>
-    <li>
-        <a href="https://en.wikipedia.org/wiki/Kumrat_Valley">Kumrat Valley</a>
-        </li>
-        <li>
-              <a href="https://en.wikipedia.org/wiki/Kumrat_Valley">Mahodand Lake</a>
-        </li>
-        <li> <a href="https://www.visitswatvalley.com/swat-museum/">Swat Museum</a>
-        </li>
-</ul>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/owMUCzst7I0?si=Q3-wfBvDMpRjw2MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h1>Travel Packages to Swat Valley</h1>
-<p>If you are planning a vacation in 2025, look no further than the breathtaking valley of Swat. Renowned for its mesmerizing beauty, rich culture, and historical significance, Swat is one of Pakistan’s top tourist destinations. Whether you’re planning a family getaway or a solo adventure, our Swat tour packages for 2025 cater to all your travel needs. Let us guide you through what makes Swat a must-visit destination and how our Swat family tour packages can make your trip unforgettable.<br> For more info pls visit the website to have more interesting package-categories</package-categories></p>
-<a href="https://www.pakistantravelguide.pk/package-category/swat-tour-packages/">Click Here !</a>
-
-
-
+    <div class="table-footer">
+      <p>Showing 5 out of 25 entries</p>
+      <div class="pagination">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a class="active" href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

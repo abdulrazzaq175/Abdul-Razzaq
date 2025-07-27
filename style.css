@@ -1,0 +1,154 @@
+/* .table{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+ .div2{
+    background-color: #e8e3e3;
+
+ }
+ .div3{
+    background-color: #e8e3e3;
+ }
+ .flex-container{
+   text-align: center;
+    display: flex;
+    background-color:rgb(82, 128, 212);
+    height: 100px;
+    width: 1300px;
+    align-items: center;
+ }
+ .div2{
+    margin-left: 500px; ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 40px;
+ }
+ .div3{
+    margin-left: 100px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 200px;
+    padding-right: 50px;
+ } */
+
+ * {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+  padding: 30px;
+}
+
+.table-container {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2196f3;
+  padding: 20px;
+  color: white;
+}
+
+.table-header h2 span {
+  font-weight: bold;
+}
+
+.btn-group .btn {
+  background: white;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th, td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.active {
+  color: green;
+}
+
+.status.suspended {
+  color: red;
+}
+
+.status.inactive {
+  color: orange;
+}
+
+.action-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #2196f3;
+  font-size: 16px;
+}
+
+.action-icon.delete {
+  color: red;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.pagination a.active {
+  background: #2196f3;
+  color: white;
+}

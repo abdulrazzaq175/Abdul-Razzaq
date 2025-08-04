@@ -1,124 +1,283 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <center><h1 class="table">Creating  A  Table</h1></center>
-   <div class="flex-container"> <h1>User Management</h1>
-   <div class="div2">Export to Excel
-   </div>
-<br>
-<br>
-   <div class="div3">Add New User</div>
-   </div>
-</div>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Management Table</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+            width: 1300px;
+          height: 200px; 
+            background-color : rgb(254, 254, 254);       
+            margin: auto;
+        }
+        .flexWrapper{
+            display: flex;
+            padding: 20px;
+        }
+        .heroSection{
+            height: 750px;
+        }
+        .heroSection img{
+            width: 693px;
+            height: 702px;
+        }
+
+        button{
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            
+            
+        }
+.section1{
+    width: 582.8px;
+    height: 56px;
+    margin: 0;
+    padding-top: 100px;
+    font-size: xx-large;
+}    
+.email{
+   width: 662px;
+   height: 20px;
+ font-size: 20px;
+ margin: 0;
+}
+.x{
+ width: 1300px;
+ height: 710px;
+ padding: 40px 0px;
+ background-color:rgb(233, 239, 250);
+ margin: auto;
+ display: flex;
+}
+.y{
+    
+    padding: 0%;
+}
+.a{
+    width: 643.55px;
+    height: 212;
+    padding: 0px 0px 32px;
+}
+.b{
+    width: 633.55px;
+    height: 36;
+    margin: auto;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 100px;
+    font-size: 50px;
+} 
+.c{ width: 633.55px;
+    height: 24;
+    margin: auto;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 40px;
+    font-size: 30px;
+
+}
+
+        button.t{
+            border-radius: 10px 10px 10px 10px;
+            background-color: black;
+            color: white;
+            border-color: black;
+        }
+        button.z{
+               border-radius: 10px 10px 10px 10px;
+               background-color: white;
+               color: black;
+               border-color: aliceblue;
+        }
+        .bitcoin{
+            margin-top: auto;
+            background-color: white;
+            width: 155px;
+            height: 135px;
+            margin: 30px 30px 0px 0px;
+            padding: 16px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .sma{
+            margin: 0px 0px 0px 20px;
+            border-color: blue;
+        }
+        .etherum{
+         margin-top: auto;
+            background-color: white;
+            width: 155px;
+            height: 135px;
+            margin: 30px 30px 0px 0px;
+            padding: 16px;
+            border-radius: 20px 20px 20px 20px;   
+        }
+        .xrp{
+            margin-top: auto;
+            background-color: white;
+            width: 155px;
+            height: 135px;
+            margin: 30px 30px 0px 0px;
+            padding: 16px;
+            border-radius: 20px 20px 20px 20px;  
+        }
+        .tether{
+            margin-top: auto;
+            background-color: white;
+            width: 155px;
+            height: 135px;
+            margin: 30px 30px 0px 0px;
+            padding: 16px;
+            border-radius: 20px 20px 20px 20px;  
+        }
+        .usd{
+            margin-top: auto;
+            background-color: white;
+            width: 155px;
+            height: 135px;
+            margin: 30px 30px 0px 0px;
+            padding: 16px;
+            border-radius: 20px 20px 20px 20px;  
+        }
+        .solana{
+            margin-top: auto;
+            background-color: white;
+            width: 155px;
+            height: 135px;
+            margin: 30px 30px 0px 0px;
+            padding: 16px;
+            border-radius: 20px 20px 20px 20px;  
+        }
+        .e{
+            display: flex;
+        }
+        .m{
+            display: flex;
+        }
+        .j{
+
+         width: 863.29px;
+         height: 662px;
+         background-color: white;
+        }
+        .f{ display: flex;
+            height: 662px;
+            width: 422.9px;
+             margin-left: 20px;
+    padding-top: 100px;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .q{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-  <div class="table-container">
-    <div class="table-header">
-      <h2>User <span>Management</span></h2>
-      <div class="btn-group">
-        <button class="btn export"><i class="fas fa-file-export"></i> Export to Excel</button>
-        <button class="btn add"><i class="fas fa-user-plus"></i> Add New User</button>
-      </div>
+    <section>
+        <div class="container flexWrapper heroSection">
+            <div>
+                <img src="https://raw.githubusercontent.com/sarimbaig08/banoqabil-b5-6-kausar/refs/heads/main/Class%2009%20Css%20(coinbase)/mobileimg.avif" alt="">
+            </div>
+            <div class="section1"><h1><b>The Future Of Money Is Here</b></h1>
+            <p style="font-size: 40px;"><br>We're the most trusted place for people and businesses to buy, sell, and manage crypto.</p>
+   <br>
+   <div class="email"><p style="font-size: ;">Email Address</p>
+<form>
+ <input type="email" placeholder="satoshi@nakamoto.com">
+</form>
+   <br>  
+   <br>
+   <button>
+        Sign Up
+    </button>
+        </div>
+        </div>
+    </section>
+<br>
+    <section>
+        <div class="x">
+    <div class="a">
+        <div class="b">Explore crypto like Bitcoin, Ethereum, and Dogecoin</div>
+    <p class="c">Simply and securely buy, sell, and manage hundreds of cryptocurrencies.</p> 
+    <br>
+    <br><button class="sma">
+        See more assets
+    </button>
     </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Date Created</th>
-          <th>Role</th>
-          <th>Status</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td><img class="avatar" src="https://randomuser.me/api/portraits/men/1.jpg" alt=""> Michael Holz</td>
-          <td>04/10/2013</td>
-          <td>Admin</td>
-          <td><span class="status active">● Active</span></td>
-          <td>
-            <i class="fas fa-cog action-icon"></i>
-            <i class="fas fa-times action-icon delete"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><img class="avatar" src="https://randomuser.me/api/portraits/women/2.jpg" alt=""> Paula Wilson</td>
-          <td>05/08/2014</td>
-          <td>Publisher</td>
-          <td><span class="status active">● Active</span></td>
-          <td>
-            <i class="fas fa-cog action-icon"></i>
-            <i class="fas fa-times action-icon delete"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><img class="avatar" src="https://randomuser.me/api/portraits/men/3.jpg" alt=""> Antonio Moreno</td>
-          <td>11/05/2015</td>
-          <td>Publisher</td>
-          <td><span class="status suspended">● Suspended</span></td>
-          <td>
-            <i class="fas fa-cog action-icon"></i>
-            <i class="fas fa-times action-icon delete"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td><img class="avatar" src="https://randomuser.me/api/portraits/women/4.jpg" alt=""> Mary Saveley</td>
-          <td>06/09/2016</td>
-          <td>Reviewer</td>
-          <td><span class="status active">● Active</span></td>
-          <td>
-            <i class="fas fa-cog action-icon"></i>
-            <i class="fas fa-times action-icon delete"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td><img class="avatar" src="https://randomuser.me/api/portraits/men/5.jpg" alt=""> Martin Sommer</td>
-          <td>12/08/2017</td>
-          <td>Moderator</td>
-          <td><span class="status inactive">● Inactive</span></td>
-          <td>
-            <i class="fas fa-cog action-icon"></i>
-            <i class="fas fa-times action-icon delete"></i>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="table-footer">
-      <p>Showing 5 out of 25 entries</p>
-      <div class="pagination">
-        <a href="#">Previous</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a class="active" href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">Next</a>
-      </div>
+    <div class="y">
+        <button class="t">Tradable</button>
+        <button class="z">Top Gainers</button>
+   <div class="e"> <div class="bitcoin">
+        <img src="bitcoin.png" height="30px" width="30px" alt="">
+        <b>Bitcoin</b></br>
+    <p>PKR 32,248368.73</p>
+    <p style="color: darkgreen;">↑ 0.79%</p>
     </div>
-  </div>
+    <div class="etherum">
+        <img src="eth.png" height="30px" width="30px" alt="">
+          <b>Bitcoin</b></br>
+    <p>PKR 32,248368.73</p>
+    <p style="color: darkgreen;">↑ 0.79%</p>
+    </div>  
+    <div class="xrp">
+        <img src="xrp.png" height="30px" width="30px" alt="">
+          <b>Bitcoin</b></br>
+    <p>PKR 32,248368.73</p>
+    <p style="color: darkgreen;">↑ 0.79%</p>
+    </div> </div> 
+  <div class="m">
+    <div class="tether">
+        <img src="tether.png" height="30px" width="30px" alt="">
+          <b>Bitcoin</b></br>
+    <p>PKR 32,248368.73</p>
+    <p style="color: darkgreen;">↑ 0.79%</p>
+    </div> 
+    <div class="solana">
+        <img src="solana.png" height="30px" width="30px" alt="">
+          <b>Bitcoin</b></br>
+    <p>PKR 32,248368.73</p>
+    <p style="color: darkgreen;">↑ 0.79%</p>
+    </div> 
+    <div class="usd">
+        <img src="usd.png" height="30px" width="30px" alt="">
+          <b>Bitcoin</b></br>
+    <p>PKR 32,248368.73</p>
+    <p style="color: darkgreen;">↑ 0.79%</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+<section>
+    <div class="j">
+    <div class="f"><h4>The Future Of Money Is Here</h4>
+            <h1><br>Start your portfolio today and discover crypto</h1>
+   <br>
+   <div class="email"><p style="font-size: ;">Email Address</p>
+<form>
+ <input type="email" placeholder="satoshi@nakamoto.com">
+</form>
+   <br>  
+   <br>
+   <button>
+        Sign Up
+    </button>
+        </div></div>
+        <div class="q">
+            <img src="https://images.ctfassets.net/c5bd0wqjc7v0/5o0IbUnXunFKmiSC31gK6j/c9da092eda3ebc34941dfa3d107437f4/Type_Circles_4x.png?fm=avif&w=1180&q=65" height="430px" width="478px" alt="">
+        </div> 
+        </div>      
+</section>
 </body>
 </html>

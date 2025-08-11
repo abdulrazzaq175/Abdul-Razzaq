@@ -1,283 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        section{
-            background-color: rgb(255, 255, 255);
-        }
-        .container{
-            width: 1300px;
-          height: 200px; 
-            background-color : rgb(254, 254, 254);       
-            margin: auto;
-        }
-        .flexWrapper{
-            display: flex;
-            padding: 20px;
-        }
-        .heroSection{
-            height: 750px;
-        }
-        .heroSection img{
-            width: 693px;
-            height: 702px;
-        }
+  <meta charset="UTF-8">
+  <title>Coinbase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        button{
-            border-radius: 10px;
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            
-            
-        }
-.section1{
-    width: 582.8px;
-    height: 56px;
-    margin: 0;
-    padding-top: 100px;
-    font-size: xx-large;
-}    
-.email{
-   width: 662px;
-   height: 20px;
- font-size: 20px;
- margin: 0;
-}
-.x{
- width: 1300px;
- height: 710px;
- padding: 40px 0px;
- background-color:rgb(233, 239, 250);
- margin: auto;
- display: flex;
-}
-.y{
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0052ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .sign-in {
+      padding: 8px 16px;
+      border: none;
+      background-color: #f0f0f0;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .get-started {
+      padding: 8px 20px;
+      background-color: #0052ff;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .sign-in:hover {
+      background-color: #e0e0e0;
+    }
+
+    .get-started:hover {
+      background-color: #0040d8;
+    }
     
-    padding: 0%;
+    
+    .container{
+      margin: auto;
+      padding-top: 60px;
+      padding-left: 10px;
+      display: flex;
+    }
+    .button {
+      background-color: #0056ff; 
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-color: #0056ff;
+  border-radius: 5px;
 }
-.a{
-    width: 643.55px;
-    height: 212;
-    padding: 0px 0px 32px;
+.email{
+  padding: 12px 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
-.b{
-    width: 633.55px;
-    height: 36;
-    margin: auto;
-    align-items: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 100px;
-    font-size: 50px;
-} 
-.c{ width: 633.55px;
-    height: 24;
-    margin: auto;
-    align-items: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 40px;
-    font-size: 30px;
+.section2{
+  height: 230px;
+  width: 100%;
+  background-color: #000;
+display: flex;
+}
+.img{
+    padding-top: 30px;
+    padding-left: 110px;
+  }
+.content{
+  color: #e0e0e0;
 
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.button2{
+background-color: #0056ff; 
+  color: rgb(7, 0, 0);
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-color: #0056ff;
+  border-radius: 25px;
+}
+.usertable td{
+  padding: 8px;
+  border-collapse: collapse ;
+  font-size: large;
+  
+}
+.usertable th{
+  padding: 8px;
+  
+  align-items: center;
+}
+.usertable tr:hover{
+background-color: #e0e5e1b1;
+}
+.table{
+  background-color: white;
+  margin-left: 400px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
 }
 
-        button.t{
-            border-radius: 10px 10px 10px 10px;
-            background-color: black;
-            color: white;
-            border-color: black;
-        }
-        button.z{
-               border-radius: 10px 10px 10px 10px;
-               background-color: white;
-               color: black;
-               border-color: aliceblue;
-        }
-        .bitcoin{
-            margin-top: auto;
-            background-color: white;
-            width: 155px;
-            height: 135px;
-            margin: 30px 30px 0px 0px;
-            padding: 16px;
-            border-radius: 20px 20px 20px 20px;
-        }
-        .sma{
-            margin: 0px 0px 0px 20px;
-            border-color: blue;
-        }
-        .etherum{
-         margin-top: auto;
-            background-color: white;
-            width: 155px;
-            height: 135px;
-            margin: 30px 30px 0px 0px;
-            padding: 16px;
-            border-radius: 20px 20px 20px 20px;   
-        }
-        .xrp{
-            margin-top: auto;
-            background-color: white;
-            width: 155px;
-            height: 135px;
-            margin: 30px 30px 0px 0px;
-            padding: 16px;
-            border-radius: 20px 20px 20px 20px;  
-        }
-        .tether{
-            margin-top: auto;
-            background-color: white;
-            width: 155px;
-            height: 135px;
-            margin: 30px 30px 0px 0px;
-            padding: 16px;
-            border-radius: 20px 20px 20px 20px;  
-        }
-        .usd{
-            margin-top: auto;
-            background-color: white;
-            width: 155px;
-            height: 135px;
-            margin: 30px 30px 0px 0px;
-            padding: 16px;
-            border-radius: 20px 20px 20px 20px;  
-        }
-        .solana{
-            margin-top: auto;
-            background-color: white;
-            width: 155px;
-            height: 135px;
-            margin: 30px 30px 0px 0px;
-            padding: 16px;
-            border-radius: 20px 20px 20px 20px;  
-        }
-        .e{
-            display: flex;
-        }
-        .m{
-            display: flex;
-        }
-        .j{
+.buybutton{
+ background-color: #177d2fd5;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;}
+  .button.buy-button:hover {
+  background-color: #218838;
+}
 
-         width: 863.29px;
-         height: 662px;
-         background-color: white;
-        }
-        .f{ display: flex;
-            height: 662px;
-            width: 422.9px;
-             margin-left: 20px;
-    padding-top: 100px;
-    font-size: large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .q{
-            display: flex;
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <section>
-        <div class="container flexWrapper heroSection">
-            <div>
-                <img src="https://raw.githubusercontent.com/sarimbaig08/banoqabil-b5-6-kausar/refs/heads/main/Class%2009%20Css%20(coinbase)/mobileimg.avif" alt="">
-            </div>
-            <div class="section1"><h1><b>The Future Of Money Is Here</b></h1>
-            <p style="font-size: 40px;"><br>We're the most trusted place for people and businesses to buy, sell, and manage crypto.</p>
-   <br>
-   <div class="email"><p style="font-size: ;">Email Address</p>
-<form>
- <input type="email" placeholder="satoshi@nakamoto.com">
-</form>
-   <br>  
-   <br>
-   <button>
-        Sign Up
-    </button>
-        </div>
-        </div>
-    </section>
-<br>
-    <section>
-        <div class="x">
-    <div class="a">
-        <div class="b">Explore crypto like Bitcoin, Ethereum, and Dogecoin</div>
-    <p class="c">Simply and securely buy, sell, and manage hundreds of cryptocurrencies.</p> 
-    <br>
-    <br><button class="sma">
-        See more assets
-    </button>
+
+  <nav class="navbar">
+    <div class="logo">coinbase</div>
+
+    <ul class="nav-links">
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Learn</a></li>
+      <li><a href="#">Individuals</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Developers</a></li>
+      <li><a href="#">Company</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <button class="sign-in">Sign in</button>
+      <button class="get-started">Get Started</button>
     </div>
-    <div class="y">
-        <button class="t">Tradable</button>
-        <button class="z">Top Gainers</button>
-   <div class="e"> <div class="bitcoin">
-        <img src="bitcoin.png" height="30px" width="30px" alt="">
-        <b>Bitcoin</b></br>
-    <p>PKR 32,248368.73</p>
-    <p style="color: darkgreen;">↑ 0.79%</p>
-    </div>
-    <div class="etherum">
-        <img src="eth.png" height="30px" width="30px" alt="">
-          <b>Bitcoin</b></br>
-    <p>PKR 32,248368.73</p>
-    <p style="color: darkgreen;">↑ 0.79%</p>
-    </div>  
-    <div class="xrp">
-        <img src="xrp.png" height="30px" width="30px" alt="">
-          <b>Bitcoin</b></br>
-    <p>PKR 32,248368.73</p>
-    <p style="color: darkgreen;">↑ 0.79%</p>
-    </div> </div> 
-  <div class="m">
-    <div class="tether">
-        <img src="tether.png" height="30px" width="30px" alt="">
-          <b>Bitcoin</b></br>
-    <p>PKR 32,248368.73</p>
-    <p style="color: darkgreen;">↑ 0.79%</p>
-    </div> 
-    <div class="solana">
-        <img src="solana.png" height="30px" width="30px" alt="">
-          <b>Bitcoin</b></br>
-    <p>PKR 32,248368.73</p>
-    <p style="color: darkgreen;">↑ 0.79%</p>
-    </div> 
-    <div class="usd">
-        <img src="usd.png" height="30px" width="30px" alt="">
-          <b>Bitcoin</b></br>
-    <p>PKR 32,248368.73</p>
-    <p style="color: darkgreen;">↑ 0.79%</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
+  </nav>
 <section>
-    <div class="j">
-    <div class="f"><h4>The Future Of Money Is Here</h4>
-            <h1><br>Start your portfolio today and discover crypto</h1>
-   <br>
-   <div class="email"><p style="font-size: ;">Email Address</p>
-<form>
- <input type="email" placeholder="satoshi@nakamoto.com">
-</form>
-   <br>  
-   <br>
-   <button>
-        Sign Up
-    </button>
-        </div></div>
-        <div class="q">
-            <img src="https://images.ctfassets.net/c5bd0wqjc7v0/5o0IbUnXunFKmiSC31gK6j/c9da092eda3ebc34941dfa3d107437f4/Type_Circles_4x.png?fm=avif&w=1180&q=65" height="430px" width="478px" alt="">
-        </div> 
-        </div>      
+    <div class="container"><div>
+      <p style=" color: #0947cf;"><b>Jump Start Your Portfolio →</b></p>
+      <br><h1  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 65px;"> Jump Start your <br>Crypto Portfolio</h1>
+    <br><p>Coinbase is the easiest place to buy and sell<br>
+cryptocurrency. Sign up and get started today.</p><br>
+  <input type="email" placeholder="Email Address" size="30px" width="50px" class="email">
+  <button class="button">
+    Sign Up
+  </button>
+</div>
+  <div class="image">
+    <img src="coinbase.webp" height="580px" width="600px">
+  </div>
+    </div><br><br>
+</section>
+<section>
+  <div class="section2">
+    <div class="img">
+      <img src="img.webp" height="160px" width="160px" alt="">
+    </div>
+    <div class="content"><br>
+     <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;">Explore web3 profiles, and claim one for free</h1>
+     <br><p>Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens.</p>
+     <br><button class="button2">
+      <b>Learn More →</b>
+     </button>
+    </div>
+  </div><br><br>
+</section>
+<section>
+  <div class="table">
+  <table class="usertable" >
+    <tr style="font-size: 15px;">
+      <th>#</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Change</th>
+      <th>Trade</th>
+      </tr>
+<tr>
+  <td>1</td>
+  <td><img src="bitcoin.png" height="35px" width="35px"><b>Bitcoin</b> BTC</td>
+  <td>PKR 7,720,567.09</td>
+  <td style="color: red;">-0.60%</td>
+  <td><button class="buybutton">Buy</button></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><img src="eth.png" height="30px" width="30px"><b>Ethereum</b> ETH</td>
+  <td>PKR 455,448.58</td>
+  <td style="color: red;">-1.40%</td>
+  <td><button class="buybutton">Buy</button></td>
+</tr><tr>
+  <td>3</td>
+  <td><img src="carnado.png" height="30px" width="30px"><b>Carnado</b> ADA</td>
+  <td>PKR 73.71</td>
+  <td style="color: #198754;">	+1.63%</td>
+  <td><button class="buybutton">Buy</button></td>
+</tr><tr>
+  <td>4</td>
+  <td><img src="solana.png" height="30px" width="30px"><b>Solana</b> SOL</td>
+  <td>PKR 6,505.06</td>
+  <td style="color: red;">	-0.02%</td>
+  <td><button class="buybutton">Buy</button></td>
+</tr>
+  </table>
+  </div>
 </section>
 </body>
 </html>

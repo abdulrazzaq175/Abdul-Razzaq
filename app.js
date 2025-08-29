@@ -1,39 +1,29 @@
-
-let juicetype=prompt("Enter which type of juice you want(mango,orange,apple)");
-let size=prompt("Enter the size of the juice glass(small,medium,large)");
-let sugar=prompt("Do you want extra sugar or not?");
-let TotalBill=0
-
-if(juicetype=="mango")
+let role=prompt("What is your position in this company(Admin,Manager,Employ or an Intern)")
+let access=false;
+ 
+if(role=="admin"||role=="Admin")
 {
- TotalBill +=100;   
+   access=true;  
 }
-else if(juicetype=="orange"){
- TotalBill +=150;       
-}
-else if(juicetype=="apple"){
- TotalBill +=120;       
-}
-
-if (size=="small") {
-    TotalBill +=50
-}
-else if (size=="medium") {
-    TotalBill +=100;
-}
-else if (size=="large") {
-    TotalBill +=150
-}
-
-if (sugar=="extra sugar") {
-    TotalBill +=20;
-}
-else
+else if(role=="Manager"||role=="manager")
 {
-    TotalBill +=0;
+  let experience=prompt("Enter number of years of your experience")
+  if(experience>=2)
+      access=true;  
 }
-
-console.log("Selected Juice Type : " +juicetype);
-console.log("Size of the glass of juice: " +size);
-console.log("Sugar Option : " +sugar);
-console.log("TotalBill : " +TotalBill);
+else if(role=="Employ"||role=="employ")
+{
+   let experience=prompt("Enter number of years of your experience")
+  let dept=prompt("What is your department ?")
+  if(experience>3 && ((dept=="It" || dept=="it") || (dept=="Hr" || dept=="hr"))){
+    access=true;}
+}
+else if(role=="intern"||role=="Intern")
+{
+  access=false;
+}
+  if (access) {
+      console.log("Access Granted");
+    } else {
+      console.log("Access Denied");
+    }
